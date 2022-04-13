@@ -16,9 +16,9 @@
      <tr>
        <td><%= post.title %></td>
        <td><%= post.content %></td>
-       <td><%= link_to "Show", posts_path(post.id) %></td>
-       <td><%= link_to "Edit", edit_booke_path(book.id) %></td>
-       <td><%= link_to "Destroy", booke_path(book.id), method: :delete %></td>
+       <td><%= link_to "Show", post_path(post.id) %></td>
+       <td><%= link_to "Edit", edit_post_path(post.id) %></td>
+       <td><%= link_to "Destroy", post_path(post.id), method: :delete %></td>
      </tr>
   <% end %>
   </tbody>

@@ -20,7 +20,7 @@ class PostsController < ApplicationController
   def create
    @post = Post.new(posts_params)
     if @post.save
-      redirect_to post_path(@posts)
+      redirect_to post_path(@post)
     else
     @post = Post.all
       render :index
